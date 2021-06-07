@@ -1,6 +1,6 @@
 # docker-gitlab-ce
 
 
-.env file create
-GITLAB_HOST=domain_name
-GITLAB_EMAIL=email_address
+.env file create<br>
+GITLAB_HOST=domain_name<br>
+GITLAB_EMAIL=email_address<br>
