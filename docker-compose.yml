@@ -24,6 +24,10 @@ services:
         letsencrypt['auto_renew_hour'] = "12"
         letsencrypt['auto_renew_minute'] = "30"
         letsencrypt['auto_renew_day_of_month'] = "*/15"
+        #backup
+        gitlab_rails['backup_path'] = '/var/opt/gitlab/backups'
+        gitlab_rails['backup_keep_time'] = 604800
+        gitlab_rails['backup_archive_permissions'] = 0644
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./gitlab/config:/etc/gitlab:rw
